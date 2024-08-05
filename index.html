@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#457 JavaScript: Clicker-peli</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container py-2">
+                <span class="navbar-brand">#457 JavaScript: Clicker-peli</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+  <div class="container text-center mt-5">
+    <div class="row">
+      <div class="col-md-2">
+        <h5>Upgrades (Passive)</h5>
+        <ul class="list-group " id="passive-upgrades">
+          <li class="list-group-item" type="button" id="art" onclick="buyUpgrade('art', 'passive')">Art (10 coins, +0.1/sec)</li>
+          <li class="list-group-item" type="button" id="music" onclick="buyUpgrade('music', 'passive')">Music (100 coins, +1/sec)</li>
+          <li class="list-group-item" type="button" id="book" onclick="buyUpgrade('book', 'passive')">Book (1,000 coins, +10/sec)</li>
+          <li class="list-group-item" type="button" id="movie" onclick="buyUpgrade('movie', 'passive')">Movie (10,000 coins, +100/sec)</li>
+          <li class="list-group-item" type="button" id="videogame" onclick="buyUpgrade('videogame', 'passive')">Video Game (100,000 coins, +1,000/sec)</li>
+          <li class="list-group-item" type="button" id="vr" onclick="buyUpgrade('vr', 'passive')">VR (1,000,000 coins, +10,000/sec)</li>
+          <li class="list-group-item" type="button" id="wow" onclick="buyUpgrade('wow', 'passive')">WOW (10,000,000 coins, +100,000/sec)</li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <h1>Clicker-peli</h1>
+        <img src="hymio.png" role="button" alt="Clickable Image" class="img-fluid" id="clickable-image" onclick="clickImage()" width="400">
+        <h3 class="mt-3">Coins: <span id="coins">0</span></h3>
+      </div>
+      <div class="col-md-2">
+        <h5>Upgrades (Click)</h5>
+        <ul class="list-group" id="click-upgrades">
+          <li class="list-group-item" type="button" id="fast-finger" onclick="buyUpgrade('fast-finger', 'click')">Fast Finger! (10 coins, +1/click)</li>
+          <li class="list-group-item" type="button" id="money" onclick="buyUpgrade('money', 'click')">Money! (1,000 coins, +10/click)</li>
+          <li class="list-group-item" type="button" id="more-money" onclick="buyUpgrade('more-money', 'click')">More Money! (10,000 coins, 2x/click)</li>
+          <li class="list-group-item" type="button" id="more-click" onclick="buyUpgrade('more-click', 'click')">More Click! (15,000 coins, +100/click)</li>
+          <li class="list-group-item" type="button" id="click-click" onclick="buyUpgrade('click-click', 'click')">Click! Click! Click! (100,000 coins, 4x/click)</li>
+          <li class="list-group-item" type="button" id="multi-tasker" onclick="buyUpgrade('multi-tasker', 'click')">Multi Tasker! (1,000,000 coins, 3x/sec)</li>
+          <li class="list-group-item" type="button" id="hacker" onclick="buyUpgrade('hacker', 'click')">Hacker! (100,000,000 coins, 5x/click and 5x/sec)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
